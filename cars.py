@@ -33,9 +33,6 @@ for page in range(1, max_pages + 1):
     #kontenery, ktore zawieraja cale info o autach
     container_of_elements = soup.find_all('article', {'class': 'ooa-1nix3k0 evg565y0'}) 
 
-    for elements in container_of_elements:
-        prices = soup.find_all('span', {'class': 'ooa-1bmnxg7 evg565y11'}) #ceny na stronie
-        links = soup.find_all('h2', {'class': 'evg565y6 evg565y20 ooa-10p8u4x er34gjf0'}) #linki do aut
 
 for elements in container_of_elements:
     prices = soup.find_all('span', {'class': 'ooa-1bmnxg7 evg565y11'}) #ceny na stronie
